@@ -1,0 +1,61 @@
+
+
+! Sample `.Xresources` file for (new) XTerm users
+! TIP: If you are new to XTerm and have not modified your system Xresources, follow these initial instructions:
+! 1. Download and save this file as `.Xresources` to your user home directory (`~/.Xresources`).
+! 2. Run `$ xrdb -merge ~/.Xresources`.
+! 3. Open a new XTerm window. You can run `$ xterm &`.
+! NOTE: To view the applied contents of this file, run `$ xrdb -query`.
+! IMPORTANT:
+! If you update the value on any line in this file, run `$ xrdb -merge ~/.Xresources` to apply the update.
+! If you un/comment or add/remove one or more lines in this file (like when trying a different color theme),
+! run `$ xrdb -remove` to clear all resources, and then run `$ xrdb -merge ~/.Xresources` to apply the update.
+
+! Window title
+
+xterm*Title: XTerm
+
+! Window dimensions
+
+xterm*geometry: 106x54
+! example: 106x54 (for 15-inch laptops)
+! TIP: To conveniently determine your desired terminal window size for XTerm startup,
+! resize an XTerm window to the desired size and then run '$ resize' in it or see 'man resize'.
+xterm*internalBorder: 2
+
+! Typeface
+
+xterm*faceName: Monospace Regular
+xterm*faceSize: 11
+xterm*boldMode: false
+
+! Color theme
+
+xterm*background: #262626
+xterm*foreground: #ebdbb2
+xterm*color0: #262628
+xterm*color8: #928374
+xterm*color1: #CC241D
+xterm*color9: #fb4934
+xterm*color2: #98971a
+xterm*color10: #b8bb26
+xterm*color3: #FF8F15
+xterm*color11: #FFAF00
+xterm*color4: #458588
+xterm*color12: #83a598
+xterm*color5: #b16286
+xterm*color13: #d3869b
+xterm*color6: #689d6a
+xterm*color14: #8ec07c
+xterm*color7: #a89984
+xterm*color15: #ebdbb2
+
+! History and scrolling
+
+xterm*saveLines: 10000
+xterm*scrollBar: false
+xterm*scrollLines: 1
+
+! Copy-paste
+
+XTerm.vt100.selectToClipboard: true
